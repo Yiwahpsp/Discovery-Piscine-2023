@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="rush.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+        <div id=randomBlock1></div>
+        <div id=randomBlock2></div>
+        <div id=randomBlock3></div>
+        <div id=randomBlock4></div>
+        <div id=randomBlock5></div>
+        <div id=randomBlock6></div>
+    <!-- First Page : chooose member id="BG" -->
+    <div class="firstpg"> 
+        <!-- Text -->
+        <div class="allmember md:py-40">
+            <h1 class="mb-14 text-8xl font-bold " id="problematic-h1">Members</h1>
+            <div class="allcard">
+                <div class="flex flex-col md:flex-row justify-center">
+                    <div class="card bg-white rounded-md drop-shadow-2xl mx-14 my-5">
+                        <img src="https://sadanduseless.b-cdn.net/wp-content/uploads/2021/04/quokka10.jpg" alt="Card Image">
+                        <a href="rushppahulo.html" class="card text-black-500 lowercase">
+                            <p class="m-10 text-2xl">ppahulo</p>
+                        </a>
+                    </div>
+                    <div class="card bg-white rounded-md drop-shadow-2xl mx-14 my-5">
+                        <img src="https://sadanduseless.b-cdn.net/wp-content/uploads/2021/04/quokka10.jpg" alt="Card Image">
+                        <a href="rushpakaewko.html" class="card text-black-500 lowercase">
+                            <p class="m-10 text-2xl">pakaewko</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+        //randomBlock
+        let hBGRandom;
+        let wBGRandom;
+        let randomColor;
+    
+        const daBG = () => {
+            hBGRandom1 = Math.random() * 100
+            wBGRandom1 = Math.random() * 100
+    
+            wBGRandom2 = Math.random() * 100
+            hBGRandom2 = Math.random() * 100
+    
+            wBGRandom3 = Math.random() * 100
+            hBGRandom3 = Math.random() * 100
+    
+            wBGRandom4 = Math.random() * 100
+            hBGRandom4 = Math.random() * 100
+    
+            wBGRandom5 = Math.random() * 100
+            hBGRandom5 = Math.random() * 100
+    
+            wBGRandom6 = Math.random() * 100
+            hBGRandom6 = Math.random() * 100
+    
+            setCRd();
+        }
+    
+        const setCRd = () => {
+            randomColor1 = Math.floor(Math.random() * 16777215).toString(16);
+            
+            randomColor2 = Math.floor(Math.random() * 16777215).toString(16);
+    
+            randomColor3 = Math.floor(Math.random() * 16777215).toString(16);
+    
+            randomColor4 = Math.floor(Math.random() * 16777215).toString(16);
+    
+            randomColor5 = Math.floor(Math.random() * 16777215).toString(16);
+    
+            randomColor6 = Math.floor(Math.random() * 16777215).toString(16);
+    
+    
+            changeBGR();
+        }
+    
+        const changeBGR = () => {
+            document.getElementById("randomBlock1").style.top = hBGRandom1 + "vh";
+            document.getElementById("randomBlock1").style.left = wBGRandom1 + "vw";
+            document.getElementById("randomBlock1").style.backgroundColor = "#" + randomColor1;
+    
+            document.getElementById("randomBlock2").style.top = hBGRandom2 + "vh";
+            document.getElementById("randomBlock2").style.left = wBGRandom2 + "vw";
+            document.getElementById("randomBlock2").style.backgroundColor = "#" + randomColor2;
+        
+            document.getElementById("randomBlock3").style.top = hBGRandom3 + "vh";
+            document.getElementById("randomBlock3").style.left = wBGRandom3 + "vw";
+            document.getElementById("randomBlock3").style.backgroundColor = "#" + randomColor3;
+            
+            document.getElementById("randomBlock4").style.top = hBGRandom4 + "vh";
+            document.getElementById("randomBlock4").style.left = wBGRandom4 + "vw";
+            document.getElementById("randomBlock4").style.backgroundColor = "#" + randomColor4;
+    
+            document.getElementById("randomBlock5").style.top = hBGRandom5 + "vh";
+            document.getElementById("randomBlock5").style.left = wBGRandom5 + "vw";
+            document.getElementById("randomBlock5").style.backgroundColor = "#" + randomColor5;
+    
+            document.getElementById("randomBlock6").style.top = hBGRandom6 + "vh";
+            document.getElementById("randomBlock6").style.left = wBGRandom6 + "vw";
+            document.getElementById("randomBlock6").style.backgroundColor = "#" + randomColor6;
+        }
+        //randomBlock END
+    
+        let BGTimer = setInterval(daBG, 1);
+    
+    </script>
+</html>
